@@ -1,5 +1,5 @@
 # SharpLulu
-A comprehensive .NET client library for the Lulu Print API
+A comprehensive .NET client library for the Lulu Print API.  Another project I'm trying out github co-pilot with.  So far impressed with it's abilities to make API clients by giving it API documentation.  I'm reviewing and updating code as I find issues.
 
 ## Overview
 
