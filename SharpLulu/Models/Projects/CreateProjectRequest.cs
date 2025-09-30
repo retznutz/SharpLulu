@@ -3,16 +3,10 @@ using System.Text.Json.Serialization;
 namespace SharpLulu.Models.Projects;
 
 /// <summary>
-/// Represents a project in the Lulu system
+/// Request model for creating a new project
 /// </summary>
-public class Project
+public class CreateProjectRequest
 {
-    /// <summary>
-    /// Unique identifier for the project
-    /// </summary>
-    [JsonPropertyName("id")]
-    public string Id { get; set; } = string.Empty;
-
     /// <summary>
     /// Title of the project
     /// </summary>
@@ -24,24 +18,6 @@ public class Project
     /// </summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
-
-    /// <summary>
-    /// Project status
-    /// </summary>
-    [JsonPropertyName("status")]
-    public ProjectStatus Status { get; set; }
-
-    /// <summary>
-    /// Date and time when the project was created
-    /// </summary>
-    [JsonPropertyName("created_at")]
-    public DateTime CreatedAt { get; set; }
-
-    /// <summary>
-    /// Date and time when the project was last updated
-    /// </summary>
-    [JsonPropertyName("updated_at")]
-    public DateTime UpdatedAt { get; set; }
 
     /// <summary>
     /// Author information
